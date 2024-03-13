@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url(images/TheReal_background.jpeg);
+    background-image: linear-gradient(#1B1919, #6F6868);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -65,4 +65,31 @@ button{
 
 button:hover{
     background-color: #a9320e;
+}
+
+.main__text__container{
+    display: flex;
+    font-family: 'Madimi One', sans-serif;
+    padding: 20px 10%;
+    margin-top: 5%;
+    color: white;
+}
+
+.main__text {
+    width: 500%;
+    font-weight: 500;
+    font-size:7em;
+    letter-spacing: 5px;
+}
+
+.paragraph__text{
+    display: flex;
+    font-family: 'Madimi One', sans-serif;
+    padding: 10px 10%;
+    color: white;
+}
+
+.paragraph__text p {
+    font-size: 25px;
+    line-height: 150%;
 }
