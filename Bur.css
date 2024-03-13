@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 body{
@@ -14,7 +15,7 @@ body{
 
 li,
 a,
-button {
+.contact--btn {
     font-family: 'Madimi One', sans-serif;
     font-weight: 500;
     font-size:25px;
@@ -22,7 +23,7 @@ button {
     text-decoration: none;
 }
 
-button {
+.contact--btn {
     color: white;
 }
 
@@ -54,7 +55,7 @@ header {
     color: #a9320e;
 }
 
-button{
+.contact--btn{
     padding: 9px 25px;
     background-color: rgb(213, 66, 21);
     border: none;
@@ -63,7 +64,7 @@ button{
     transition: all 0.3s ease 0s;
 }
 
-button:hover{
+.contact--btn:hover{
     background-color: #a9320e;
 }
 
@@ -92,4 +93,14 @@ button:hover{
 .paragraph__text p {
     font-size: 25px;
     line-height: 150%;
+}
+
+.main__burger__container {
+    display: flex;
+}
+
+.burger__image {
+    position: absolute;
+    top: 10%;
+    left: 60%;
 }
