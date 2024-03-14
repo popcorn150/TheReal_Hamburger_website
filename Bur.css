@@ -104,3 +104,53 @@ header {
     top: 10%;
     left: 60%;
 }
+
+.cta__btns{
+    display: flex;
+    padding: 50px 10%;
+}
+
+.order__now__btn, .view__more__btn{
+    font-family: 'Madimi One', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgb(213, 66, 21);
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.order__now__btn:hover{
+    background-color: #a9320e;
+}
+
+.view__more__btn{
+    background-color: rgb(108, 107, 107);
+    border: 3px solid white;
+    color: rgb(213, 66, 21);
+    margin: 0 3rem;
+}
+
+.view__more__btn:hover{
+    background-color: rgb(194, 193, 193);
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.bottom__burger__container {
+    display: flex;
+    padding: 20px 10%;
+}
+
+.bottom__burger__container > div {
+    width: 200px;
+    height: 300px;
+}
