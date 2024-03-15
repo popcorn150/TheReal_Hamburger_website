@@ -132,7 +132,7 @@ header {
 }
 
 .view__more__btn{
-    background-color: rgb(108, 107, 107);
+    background-color: transparent;
     border: 3px solid white;
     color: rgb(213, 66, 21);
     margin: 0 3rem;
@@ -158,4 +158,16 @@ img{
     margin: 0 10px;
     width: 220px;
     height: 200px;
+}
+
+/* #preloader {
+    background-image: linear-gradient(#1B1919, #6F6868);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+} */
+
+@media screen {
+    
 }
