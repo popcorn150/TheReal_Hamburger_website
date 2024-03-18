@@ -4,13 +4,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-body{
+body {
     background-image: linear-gradient(#1B1919, #6F6868);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
 }
 
 li,
@@ -18,7 +18,7 @@ a,
 .contact--btn {
     font-family: 'Madimi One', sans-serif;
     font-weight: 500;
-    font-size:25px;
+    font-size: 25px;
     color: rgb(213, 66, 21);
     text-decoration: none;
 }
@@ -55,7 +55,7 @@ header {
     color: #a9320e;
 }
 
-.contact--btn{
+.contact--btn {
     padding: 9px 25px;
     background-color: rgb(213, 66, 21);
     border: none;
@@ -64,11 +64,43 @@ header {
     transition: all 0.3s ease 0s;
 }
 
-.contact--btn:hover{
+.contact--btn:hover {
     background-color: #a9320e;
 }
 
-.main__text__container{
+.hamburger__menu {
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger__menu .bar,
+.hamburger__menu::after,
+.hamburger__menu::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+.hamburger__menu.is-active::before{
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+.hamburger__menu.is-active .bar{
+    opacity: 0;
+}
+.hamburger__menu.is-active::after{
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.main__text__container {
     display: flex;
     font-family: 'Madimi One', sans-serif;
     padding: 20px 10%;
@@ -79,11 +111,11 @@ header {
 .main__text {
     width: 500%;
     font-weight: 500;
-    font-size:7em;
+    font-size: 7em;
     letter-spacing: 5px;
 }
 
-.paragraph__text{
+.paragraph__text {
     display: flex;
     font-family: 'Madimi One', sans-serif;
     padding: 10px 10%;
@@ -107,12 +139,13 @@ header {
     width: 1000px;
 }
 
-.cta__btns{
+.cta__btns {
     display: flex;
     padding: 50px 10%;
 }
 
-.order__now__btn, .view__more__btn{
+.order__now__btn,
+.view__more__btn {
     font-family: 'Madimi One', sans-serif;
     font-weight: 300;
     font-size: 1.5em;
@@ -127,22 +160,22 @@ header {
     transition: all 0.3s ease 0s;
 }
 
-.order__now__btn:hover{
+.order__now__btn:hover {
     background-color: #a9320e;
 }
 
-.view__more__btn{
+.view__more__btn {
     background-color: transparent;
     border: 3px solid white;
     color: rgb(213, 66, 21);
     margin: 0 3rem;
 }
 
-.view__more__btn:hover{
+.view__more__btn:hover {
     background-color: rgb(194, 193, 193);
 }
 
-img{
+img {
     max-width: 100%;
     max-height: 100%;
 }
@@ -168,6 +201,75 @@ img{
     z-index: 100;
 } */
 
-@media screen {
-    
+@media screen and (max-width: 1200px) {
+    .logo {
+        width: 250px;
+        height: 100px;
+    }
+
+    li,
+    a,
+    .contact--btn {
+        font-size: 1em;
+    }
+
+    .main__text__container {
+        flex-wrap: wrap;
+        padding: 5px 10%;
+    }
+
+    .main__text {
+        width: 100%;
+        font-size: 3em;
+        letter-spacing: 10px;
+    }
+
+    .paragraph__text {
+        flex-wrap: wrap;
+    }
+
+    .paragraph__text p {
+        font-size: 1rem;
+    }
+
+    .cta__btns {
+        padding: 30px 10%;
+    }
+
+    .order__now__btn,
+    .view__more__btn {
+        font-size: 1em;
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .burger__image {
+        top: 20%;
+        left: 57%;
+        height: 500px;
+        width: 500px;
+    }
+
+    .bottom__burger__container {
+        flex-wrap: wrap;
+    }
+
+    .bottom__burger__container img {
+        margin: 5px 5px;
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-repeat: repeat;
+    }
+
+    li,
+    a,
+    .contact--btn {
+        display: none;
+    }
 }
