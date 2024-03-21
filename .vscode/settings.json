@@ -1,3 +1,4 @@
 {
-    "editor.fontFamily": "DejaVu Sans Mono"
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New' monospace",
+    "editor.fontSize": 12
 }
